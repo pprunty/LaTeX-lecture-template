@@ -1,0 +1,43 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+% Madrid
+
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{scrextend}
+\usepackage[style=authoryear]{biblatex}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\setbeamertemplate{background canvas}{%
+    \begin{tikzpicture}[remember picture,overlay]
+        \shade[top color=blue!12, bottom color=red!12, middle color=red!7]
+        ([shift={(0.cm,0cm)}]current page.north west)
+        rectangle
+        ([shift={(0cm,0cm)}]current page.south east);
+    \end{tikzpicture}%
+}
+\setbeamertemplate{navigation symbols}{}
+
+\title{High-Performance Training of Convolutional Neural Networks (CNNs)}
+\titlegraphic{\includegraphics[width=10cm,height=2.7cm]{imgs/tcd.png}}
+\author{Patrick Prunty}
+\date{MSc. High-Performance Computing\\March 2020}
+
+
+\begin{document}
+    \maketitle
+
+    \input{slides/slide_1}
+    \input{slides/slide_2}
+    \input{slides/slide_3}
+    \input{slides/slide_4}
+    \input{slides/slide_5}
+
+
+    \begin{frame}
+        \huge{\centerline{The End}}
+    \end{frame}
+
+\end{document}
