@@ -10,15 +10,16 @@
 \usepackage{tikz}
 \usepackage{graphicx}
 
-\setbeamertemplate{background canvas}{%
-    \begin{tikzpicture}[remember picture,overlay]
-        \shade[top color=blue!12, bottom color=red!12, middle color=red!7]
-        ([shift={(0.cm,0cm)}]current page.north west)
-        rectangle
-        ([shift={(0cm,0cm)}]current page.south east);
-    \end{tikzpicture}%
-}
-\setbeamertemplate{navigation symbols}{}
+% Uncomment the below block to produce a nice gradient background
+% \setbeamertemplate{background canvas}{%
+%     \begin{tikzpicture}[remember picture,overlay]
+%         \shade[top color=blue!12, bottom color=red!12, middle color=red!7]
+%         ([shift={(0.cm,0cm)}]current page.north west)
+%         rectangle
+%         ([shift={(0cm,0cm)}]current page.south east);
+%     \end{tikzpicture}%
+% }
+% \setbeamertemplate{navigation symbols}{}
 
 \title{High-Performance Training of Convolutional Neural Networks (CNNs)}
 \titlegraphic{\includegraphics[width=10cm,height=2.7cm]{imgs/tcd.png}}
